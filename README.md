@@ -1,2 +1,2 @@
-# ruby-cockroach
+# cockroach-ruby
 Experimental project...
