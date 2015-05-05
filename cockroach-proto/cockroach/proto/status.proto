@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 
 import "cockroach/proto/data.proto";
 import "cockroach/proto/config.proto";

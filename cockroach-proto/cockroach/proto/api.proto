@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 
 import "cockroach/proto/config.proto";
 import "cockroach/proto/data.proto";
@@ -76,7 +76,7 @@ message RequestHeader {
   //  with UserPriority=1. This value is ignored if Txn is
   //  specified. If neither this value nor Txn is specified, the value
   //  defaults to 1.
-  optional int32 user_priority = 8 [default = 1];
+  optional int32 user_priority = 8;
   // Txn is set non-nil if a transaction is underway. To start a txn,
   //  the first request should set this field to non-nil with name and
   //  isolation level set as desired. The response will contain the
