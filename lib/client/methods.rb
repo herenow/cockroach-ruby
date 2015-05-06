@@ -4,6 +4,8 @@ require "../cockroach/proto/api"
 Proto = Cockroach::Proto
 
 class Methods
+  attr_reader :method, :is_write, :request_type, :response_type
+
   """Constants defining RPC methods.
   Each has the following attributes:
   * name
